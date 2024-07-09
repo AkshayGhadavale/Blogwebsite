@@ -2,18 +2,21 @@ import React from 'react'
 import { Editor } from '@tinymce/tinymce-react'
 import { Controller } from 'react-hook-form'
 
+
 const RTE = ({name,control,label,defaultValue=""}) => {
   return (
     <div className='w-full'> 
-    {babel && <label className='inline-block mb-1 pl-1'>{label}</label>}
+    {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
 
     <Controller
     name={name || "content"}
     control={control}
     render={({field: {onChange}}) => (
         <Editor
+         apiKey='zxh0iswv7wr06n06slqc4e4g3z0ou0i7leo3tbf4t0se33wi'
         initialValue={defaultValue}
         init={{
+      
             initialValue: defaultValue,
             height: 500,
             menubar: true,

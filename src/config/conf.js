@@ -3,7 +3,7 @@ const conf ={
 
     appwriteprojectId:String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
 
-    appwritedatabaseId:String(import.meta.env.VITE_APPWRITE_DATABASE_IDD),
+    appwritedatabaseId:String(import.meta.env.VITE_APPWRITE_DATABASE_ID),
     
     appwritecollectiontId:String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
     
